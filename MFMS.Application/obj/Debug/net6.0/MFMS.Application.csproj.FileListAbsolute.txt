@@ -1,0 +1,15 @@
+D:\Project\MFMS\MFMS.Application\bin\Debug\net6.0\MFMS.Application.deps.json
+D:\Project\MFMS\MFMS.Application\bin\Debug\net6.0\MFMS.Application.dll
+D:\Project\MFMS\MFMS.Application\bin\Debug\net6.0\MFMS.Application.pdb
+D:\Project\MFMS\MFMS.Application\bin\Debug\net6.0\MFMS.Domain.dll
+D:\Project\MFMS\MFMS.Application\bin\Debug\net6.0\MFMS.Domain.pdb
+D:\Project\MFMS\MFMS.Application\obj\Debug\net6.0\MFMS.Application.csproj.AssemblyReference.cache
+D:\Project\MFMS\MFMS.Application\obj\Debug\net6.0\MFMS.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\MFMS\MFMS.Application\obj\Debug\net6.0\MFMS.Application.AssemblyInfoInputs.cache
+D:\Project\MFMS\MFMS.Application\obj\Debug\net6.0\MFMS.Application.AssemblyInfo.cs
+D:\Project\MFMS\MFMS.Application\obj\Debug\net6.0\MFMS.Application.csproj.CoreCompileInputs.cache
+D:\Project\MFMS\MFMS.Application\obj\Debug\net6.0\MFMS.Application.csproj.CopyComplete
+D:\Project\MFMS\MFMS.Application\obj\Debug\net6.0\MFMS.Application.dll
+D:\Project\MFMS\MFMS.Application\obj\Debug\net6.0\refint\MFMS.Application.dll
+D:\Project\MFMS\MFMS.Application\obj\Debug\net6.0\MFMS.Application.pdb
+D:\Project\MFMS\MFMS.Application\obj\Debug\net6.0\ref\MFMS.Application.dll

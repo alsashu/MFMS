@@ -1,0 +1,12 @@
+D:\Project\MFMS\MFMS.Domain\bin\Debug\net6.0\MFMS.Domain.deps.json
+D:\Project\MFMS\MFMS.Domain\bin\Debug\net6.0\MFMS.Domain.dll
+D:\Project\MFMS\MFMS.Domain\bin\Debug\net6.0\MFMS.Domain.pdb
+D:\Project\MFMS\MFMS.Domain\obj\Debug\net6.0\MFMS.Domain.csproj.AssemblyReference.cache
+D:\Project\MFMS\MFMS.Domain\obj\Debug\net6.0\MFMS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\MFMS\MFMS.Domain\obj\Debug\net6.0\MFMS.Domain.AssemblyInfoInputs.cache
+D:\Project\MFMS\MFMS.Domain\obj\Debug\net6.0\MFMS.Domain.AssemblyInfo.cs
+D:\Project\MFMS\MFMS.Domain\obj\Debug\net6.0\MFMS.Domain.csproj.CoreCompileInputs.cache
+D:\Project\MFMS\MFMS.Domain\obj\Debug\net6.0\MFMS.Domain.dll
+D:\Project\MFMS\MFMS.Domain\obj\Debug\net6.0\refint\MFMS.Domain.dll
+D:\Project\MFMS\MFMS.Domain\obj\Debug\net6.0\MFMS.Domain.pdb
+D:\Project\MFMS\MFMS.Domain\obj\Debug\net6.0\ref\MFMS.Domain.dll

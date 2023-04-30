@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "DE5IQAqY8llAMmElDIst59Q7CtIywc7KrPBoZUfdixE=",
+  "Source": "MFMS.API",
+  "BasePath": "_content/MFMS.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
