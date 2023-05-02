@@ -95,7 +95,7 @@ namespace MFMS.Infrastructure.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("client");
+                    b.ToTable("mfms_client");
                 });
 
             modelBuilder.Entity("MFMS.Domain.ClientProfileViewedHistory", b =>
@@ -117,7 +117,7 @@ namespace MFMS.Infrastructure.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("client_profile_viewed_history");
+                    b.ToTable("mfms_client_profile_viewed_history");
                 });
 
             modelBuilder.Entity("MFMS.Domain.ClientSubscriptionDetail", b =>
@@ -159,7 +159,7 @@ namespace MFMS.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("client_subscription_details");
+                    b.ToTable("mfms_client_subscription_details");
                 });
 
             modelBuilder.Entity("MFMS.Domain.Country", b =>
@@ -183,7 +183,7 @@ namespace MFMS.Infrastructure.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("country");
+                    b.ToTable("mfms_country");
                 });
 
             modelBuilder.Entity("MFMS.Domain.Currency", b =>
@@ -210,7 +210,7 @@ namespace MFMS.Infrastructure.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("currency");
+                    b.ToTable("mfms_currency");
                 });
 
             modelBuilder.Entity("MFMS.Domain.DocumentType", b =>
@@ -230,7 +230,7 @@ namespace MFMS.Infrastructure.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("document_type");
+                    b.ToTable("mfms_document_type");
                 });
 
             modelBuilder.Entity("MFMS.Domain.Language", b =>
@@ -253,7 +253,7 @@ namespace MFMS.Infrastructure.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("language");
+                    b.ToTable("mfms_language");
                 });
 
             modelBuilder.Entity("MFMS.Domain.Maid", b =>
@@ -297,8 +297,9 @@ namespace MFMS.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("created_date")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<string>("created_date")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<byte[]>("document_photo")
                         .IsRequired()
@@ -307,8 +308,9 @@ namespace MFMS.Infrastructure.Migrations
                     b.Property<int>("document_type_id")
                         .HasColumnType("integer");
 
-                    b.Property<DateTime>("expected_date_of_availibility")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<string>("expected_date_of_availibility")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<string>("first_name")
                         .IsRequired()
@@ -339,8 +341,9 @@ namespace MFMS.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("modified_date")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<string>("modified_date")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<string>("password")
                         .IsRequired()
@@ -376,7 +379,7 @@ namespace MFMS.Infrastructure.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("maid");
+                    b.ToTable("mfms_maid");
                 });
 
             modelBuilder.Entity("MFMS.Domain.MaidReview", b =>
@@ -420,7 +423,7 @@ namespace MFMS.Infrastructure.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("maid_reviews");
+                    b.ToTable("mfms_maid_reviews");
                 });
 
             modelBuilder.Entity("MFMS.Domain.Movie", b =>
@@ -440,7 +443,7 @@ namespace MFMS.Infrastructure.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("movie");
+                    b.ToTable("mfms_movie");
                 });
 
             modelBuilder.Entity("MFMS.Domain.Requirement", b =>
@@ -487,7 +490,59 @@ namespace MFMS.Infrastructure.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("requirement");
+                    b.ToTable("mfms_requirement");
+                });
+
+            modelBuilder.Entity("MFMS.Domain.Role", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id"));
+
+                    b.Property<bool?>("active")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("description")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("role_for")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("role_name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("id");
+
+                    b.ToTable("mfms_role");
+                });
+
+            modelBuilder.Entity("MFMS.Domain.RoleMaster", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id"));
+
+                    b.Property<string>("description")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<bool>("is_active")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("id");
+
+                    b.ToTable("mfms_role_master");
                 });
 
             modelBuilder.Entity("MFMS.Domain.SalaryRange", b =>
@@ -507,7 +562,7 @@ namespace MFMS.Infrastructure.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("salary_range");
+                    b.ToTable("mfms_salary_range");
                 });
 
             modelBuilder.Entity("MFMS.Domain.State", b =>
@@ -530,7 +585,7 @@ namespace MFMS.Infrastructure.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("state");
+                    b.ToTable("mfms_state");
                 });
 
             modelBuilder.Entity("MFMS.Domain.SubscriptionType", b =>
@@ -599,7 +654,108 @@ namespace MFMS.Infrastructure.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("subscription_type");
+                    b.ToTable("mfms_subscription_type");
+                });
+
+            modelBuilder.Entity("MFMS.Domain.Tokens", b =>
+                {
+                    b.Property<string>("token")
+                        .HasColumnType("text");
+
+                    b.Property<string>("refresh_token")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("token");
+
+                    b.ToTable("mfms_tokens");
+                });
+
+            modelBuilder.Entity("MFMS.Domain.Users", b =>
+                {
+                    b.Property<long>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("id"));
+
+                    b.Property<string>("access")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<bool>("active")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("address")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("api_key")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("contact_person")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("country_code")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("created_by_user_id")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("created_on")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<bool>("is_deleted")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("mobile")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("modified_by_user_id")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("old_password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("role_id")
+                        .HasColumnType("integer");
+
+                    b.Property<bool>("terms_and_conditions")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("updated_date")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<byte[]>("user_image")
+                        .IsRequired()
+                        .HasColumnType("bytea");
+
+                    b.Property<string>("verification_code")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("id");
+
+                    b.ToTable("mfms_users");
                 });
 
             modelBuilder.Entity("MFMS.Domain.WorkingHour", b =>
@@ -619,7 +775,7 @@ namespace MFMS.Infrastructure.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("working_hours");
+                    b.ToTable("mfms_working_hours");
                 });
 #pragma warning restore 612, 618
         }

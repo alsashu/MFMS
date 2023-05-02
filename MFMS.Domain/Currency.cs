@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MFMS.Domain
 {
-    [Table("currency")]
+    [Table("mfms_currency")]
     public class Currency
     {
         [Key, Required]

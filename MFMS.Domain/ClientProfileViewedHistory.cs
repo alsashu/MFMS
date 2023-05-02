@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MFMS.Domain
 {
-    [Table("client_profile_viewed_history")]
+    [Table("mfms_client_profile_viewed_history")]
     public class ClientProfileViewedHistory
     {
         [Key, Required]

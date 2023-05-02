@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MFMS.Domain
 {
-    [Table("salary_range")]
+    [Table("mfms_salary_range")]
     public class SalaryRange
     {
         [Key, Required]

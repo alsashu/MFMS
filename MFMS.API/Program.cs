@@ -55,10 +55,16 @@ builder.Services.AddSwaggerGen(c =>
 
 });
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 //Database services
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
+
 builder.Services.AddScoped<IMovieService, MovieService>();
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
+
+builder.Services.AddScoped<IUsersService, UsersService>();
+builder.Services.AddScoped<IUsersRepository, UsersRepository>();
 
 //Implement infrastructure DependencyInjection container
 builder.Services.ImplementPersistence(builder.Configuration);

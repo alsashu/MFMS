@@ -1,15 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "Zo1hOfceFmUyTDx+XVCSnn1ylxxqEI3aufg4ifCf+7LfwV0esfrnLOO5XOaCZIp2DQWVYMX991SRj/qnA57XYQ==",
+  "dgSpecHash": "CFinO33Jg0V3kKRWwhqu5UbI1h851JTZdihahbj1Z5hEGv9RpkFzzZ+I8CEJfqVvn9W1bnpF8Zx100yY12s9Mg==",
   "success": true,
   "projectFilePath": "D:\\Project\\MFMS\\MFMS.Application\\MFMS.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\joshi\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\joshi\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\joshi\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\joshi\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\joshi\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0-preview.3.23174.8\\microsoft.extensions.configuration.abstractions.8.0.0-preview.3.23174.8.nupkg.sha512",
+    "C:\\Users\\joshi\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\joshi\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\joshi\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0-preview.3.23174.8\\microsoft.extensions.primitives.8.0.0-preview.3.23174.8.nupkg.sha512",
     "C:\\Users\\joshi\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.17.0\\microsoft.identitymodel.jsonwebtokens.6.17.0.nupkg.sha512",
     "C:\\Users\\joshi\\.nuget\\packages\\microsoft.identitymodel.logging\\6.17.0\\microsoft.identitymodel.logging.6.17.0.nupkg.sha512",
     "C:\\Users\\joshi\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.17.0\\microsoft.identitymodel.tokens.6.17.0.nupkg.sha512",
+    "C:\\Users\\joshi\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\joshi\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
     "C:\\Users\\joshi\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.17.0\\system.identitymodel.tokens.jwt.6.17.0.nupkg.sha512",
     "C:\\Users\\joshi\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\joshi\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"

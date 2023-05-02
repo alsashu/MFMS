@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MFMS.Domain
 {
-    [Table("subscription_type")]
+    [Table("mfms_subscription_type")]
     public class SubscriptionType
     {
         [Key, Required]

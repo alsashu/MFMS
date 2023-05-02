@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MFMS.Domain
 {
-    [Table("movie")]
+    [Table("mfms_movie")]
     public class Movie
     {
         [Key, Required]

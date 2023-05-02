@@ -28,14 +28,14 @@ namespace MFMS.Application.Implementation
 
         public Tokens Authenticate(Users users)
         {
-            bool hasAdminPassword = UsersRecords.Any(x => x.Key == "name" && x.Value == users.Name || x.Key == "password" && x.Value == users.Password);
+            bool hasAdminPassword = UsersRecords.Any(x => x.Key == "name" && x.Value == users.name || x.Key == "password" && x.Value == users.password);
             bool hasAdminPassword1 = UsersRecords.ContainsKey("name") && UsersRecords["name"] == "admin" && UsersRecords.ContainsKey("password") && UsersRecords["password"] == "password";
             bool hasAdminPassword2 = UsersRecords.Any(x => x.Key == "name" && x.Value == "admin") && UsersRecords.Any(x => x.Key == "password" && x.Value == "password");
             bool hasAdminPassword3 = UsersRecords.Any(x => x.Key == "name" && x.Value == "admin" && UsersRecords.ContainsKey("password") && UsersRecords["password"] == "password");
-            bool hasAdminPassword5 = UsersRecords["name"] == users.Name;
-            bool hasAdminPassword6 = UsersRecords["password"] == users.Password;
+            bool hasAdminPassword5 = UsersRecords["name"] == users.name;
+            bool hasAdminPassword6 = UsersRecords["password"] == users.password;
 
-            if (!UsersRecords.Any(x => x.Key == users.Name && x.Value == users.Password))
+            if (!UsersRecords.Any(x => x.Key == users.name && x.Value == users.password))
             {
                 return null;
             }
@@ -47,13 +47,13 @@ namespace MFMS.Application.Implementation
             {
                 Subject = new ClaimsIdentity(new Claim[]
               {
-             new Claim(ClaimTypes.Name, users.Name)
+             new Claim(ClaimTypes.Name, users.name)
               }),
                 Expires = DateTime.UtcNow.AddMinutes(10),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(tokenKey), SecurityAlgorithms.HmacSha256Signature)
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);
-            return new Tokens { Token = tokenHandler.WriteToken(token) };
+            return new Tokens { token = tokenHandler.WriteToken(token) };
         }
     }
 }

@@ -1,0 +1,12 @@
+D:\Project\MFMS\MFMS.DataTransferObject\bin\Debug\net6.0\MFMS.DataTransferObject.deps.json
+D:\Project\MFMS\MFMS.DataTransferObject\bin\Debug\net6.0\MFMS.DataTransferObject.dll
+D:\Project\MFMS\MFMS.DataTransferObject\bin\Debug\net6.0\MFMS.DataTransferObject.pdb
+D:\Project\MFMS\MFMS.DataTransferObject\obj\Debug\net6.0\MFMS.DataTransferObject.csproj.AssemblyReference.cache
+D:\Project\MFMS\MFMS.DataTransferObject\obj\Debug\net6.0\MFMS.DataTransferObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\MFMS\MFMS.DataTransferObject\obj\Debug\net6.0\MFMS.DataTransferObject.AssemblyInfoInputs.cache
+D:\Project\MFMS\MFMS.DataTransferObject\obj\Debug\net6.0\MFMS.DataTransferObject.AssemblyInfo.cs
+D:\Project\MFMS\MFMS.DataTransferObject\obj\Debug\net6.0\MFMS.DataTransferObject.csproj.CoreCompileInputs.cache
+D:\Project\MFMS\MFMS.DataTransferObject\obj\Debug\net6.0\MFMS.DataTransferObject.dll
+D:\Project\MFMS\MFMS.DataTransferObject\obj\Debug\net6.0\refint\MFMS.DataTransferObject.dll
+D:\Project\MFMS\MFMS.DataTransferObject\obj\Debug\net6.0\MFMS.DataTransferObject.pdb
+D:\Project\MFMS\MFMS.DataTransferObject\obj\Debug\net6.0\ref\MFMS.DataTransferObject.dll

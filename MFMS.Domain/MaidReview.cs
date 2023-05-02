@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MFMS.Domain
 {
-    [Table("maid_reviews")]
+    [Table("mfms_maid_reviews")]
     public class MaidReview
     {
         [Key, Required]

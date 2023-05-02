@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MFMS.Domain
 {
-    [Table("language")]
+    [Table("mfms_language")]
     public class Language
     {
         [Key, Required]

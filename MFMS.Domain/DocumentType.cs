@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MFMS.Domain
 {
-    [Table("document_type")]
+    [Table("mfms_document_type")]
     public class DocumentType
     {
         [Key, Required]

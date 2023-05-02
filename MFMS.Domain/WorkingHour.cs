@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MFMS.Domain
 {
-    [Table("working_hours")]
+    [Table("mfms_working_hours")]
     public class WorkingHour
     {
         [Key, Required]

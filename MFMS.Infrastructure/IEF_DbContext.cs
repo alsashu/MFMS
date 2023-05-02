@@ -19,12 +19,15 @@ namespace MFMS.Infrastructure
         DbSet<Language> Languages { get; set; }
         DbSet<Maid> Maids { get; set; }
         DbSet<MaidReview> MaidReviews { get; set; }
+        DbSet<Movie> Movies { get; set; }
         DbSet<Requirement> Requirements { get; set; }
+        DbSet<Role> Role { get; set; }
+        DbSet<RoleMaster> RoleMaster { get; set; }
         DbSet<SalaryRange> SalaryRanges { get; set; }
         DbSet<State> States { get; set; }
         DbSet<SubscriptionType> SubscriptionTypes { get; set; }
         DbSet<WorkingHour> WorkingHour { get; set; }
-        DbSet<Movie> Movies { get; set; }
-
+        DbSet<Users> Users { get; set; }
+        DbSet<Tokens> Tokens { get; set; }
     }
 }

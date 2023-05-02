@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MFMS.Domain
 {
-    [Table("client")]
+    [Table("mfms_client")]
     public class Client
     {
         [Key, Required]

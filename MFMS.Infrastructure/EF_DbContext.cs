@@ -29,5 +29,9 @@ namespace MFMS.Infrastructure
         public DbSet<State> States { get; set; }
         public DbSet<SubscriptionType> SubscriptionTypes { get; set; }
         public DbSet<WorkingHour> WorkingHour { get; set; }
+        public DbSet<Role> Role { get; set; }
+        public DbSet<RoleMaster> RoleMaster { get; set; }
+        public DbSet<Users> Users { get; set; }
+        public DbSet<Tokens> Tokens { get; set; }
     }
 }
